@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <title>Is it Christmas?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 120pt;
+      background-color: black;
+      color: white;
+    }
+    p {
+      margin-top: 240px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p>NO</p>
+  <script>
+    const today = new Date();
+    const itsChristmas = today.getDate() === 25 && today.getMonth() === 11;
+
+    if (itsChristmas) document.querySelector("p").innerText = "YES!";
+  </script>
+</body>
+</html>
